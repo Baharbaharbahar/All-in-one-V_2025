@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="fonctions.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL IN ONE V2025 By TEZEGHDENTI</title>
+</head>
+
+<body>
+        <form action="ajout.php" method="post" name="f1">
+            Login: <input type="text" name="login" id="login" > <br>
+            Mot de passe: <input type="password" name="passwd" id="passwd" > <br>
+            Nom: <input type="text" name="nom" id="nom" > <br>
+            Prénom: <input type="text" name="prenom" id="prenom" "> <br>
+            Date de Naissance: <input type="date" name="date_naiss" id="date_naiss" > <br>
+            Heure: <input type="time" name="heure" id="heure"> <br>
+            Email: <input type="email" name="mail" id="mail" placeholder="aaaa@bbbb.cc" > <br>
+            <fieldset>
+                <legend>Sexe :</legend>
+                <input type="radio" name="sexe" id="homme"  value="H" >Homme
+                <input type="radio" name="sexe" id="femme" value="F" >Femme
+            </fieldset>
+            <br>
+            <label for="">Language</label>
+            <input list="languages" name="language" id="language">
+            <datalist id="languages">
+                <option value="PHP">
+                <option value="HTML">
+                <option value="Javascript">
+                <option value="CSS">
+            </datalist>
+            <br>
+            <label for="">Preférence Travail</label>
+            <input type="checkbox" name="travail" id="frelance" value="frelance">Frelance
+            <input type="checkbox" name="travail" id="hybride" value="hybride">Hybride
+            <input type="checkbox" name="travail" id="site" value="site">Sur Site
+            <input type="checkbox" name="travail" id="remote" value="remote">Remote
+
+            <br>
+            Sports:
+            <input type="checkbox" name="foot" id="foot" value="O"  >Football
+            <input type="checkbox" name="hand" id="hand" value="O" >Handball
+            <input type="checkbox" name="tennis" id="tennis" value="O">Tennis
+<br>
+<select name="pays" id="pays">
+<option>Veuillez choisir un pays SVP</option>
+<option value="TN">Tunisie</option>
+<option value="AL">Algérie</option>
+<option value="LY">Lybie</option>
+</select>
+<br>
+
+    Remarques:
+    <br>
+    <textarea name="remarques" id="remarques" cols="30" rows="10"></textarea>
+  <br>
+  <input type="button" value="mon bouton" onclick="verif()">
+  <input type="submit" value="Ajouter" name="ajouter">
+  <input type="submit" value="Supprimer" name="supprimer">
+  <input type="submit" value="Afficher" name="afficher">
+  <input type="submit" value="Mise à jour" name="maj">
+
+  <input type="reset" value="Reinitialiser">
+</form>
+    </body>
+</html>
